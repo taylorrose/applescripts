@@ -1,0 +1,15 @@
+set url1 to "https://www.youtube.com/watch?v=AXwGVXD7qEQ"
+
+set WaitSeconds to 1
+
+tell application "Google Chrome"
+	activate
+	delay WaitSeconds
+	open location url1
+end tell
+tell application "System Events"
+	delay WaitSeconds
+	keystroke "f" using {command down, shift down}
+	delay 4
+	keystroke "w" using command down
+end tell
